@@ -1,6 +1,8 @@
 import { test, expect } from '@playwright/test';
 import { createArticle, createUser, signInWithToken, uniqueId } from './helpers.js';
 
+// The API lists an article only if its author is a demo account or is the viewer, so tests
+// that read an article list sign in as the author.
 test.describe('Articles', () => {
   test('[TC-005] [smoke] User can publish a new article', async ({ page, request }) => {
     const user = await createUser(request);
@@ -47,10 +49,9 @@ test.describe('Articles', () => {
   });
 
   test('[TC-008] [regression] User can favorite an article', async ({ page, request }) => {
-    const author = await createUser(request);
-    const article = await createArticle(request, author);
-    const reader = await createUser(request);
-    await signInWithToken(page, reader);
+    const user = await createUser(request);
+    const article = await createArticle(request, user);
+    await signInWithToken(page, user);
 
     await page.goto('/');
     await page.getByRole('link', { name: 'Global Feed' }).click();
@@ -65,6 +66,7 @@ test.describe('Articles', () => {
   test('[TC-009] [nightly] [e2e] Global feed loads and displays articles', async ({ page, request }) => {
     const user = await createUser(request);
     const article = await createArticle(request, user);
+    await signInWithToken(page, user);
 
     await page.goto('/');
     await page.getByRole('link', { name: 'Global Feed' }).click();

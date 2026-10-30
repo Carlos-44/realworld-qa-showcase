@@ -21,6 +21,8 @@ test.describe('Profile', () => {
     const user = await createUser(request);
     const first = await createArticle(request, user);
     const second = await createArticle(request, user);
+    // The API lists an article only if its author is a demo account or is the viewer
+    await signInWithToken(page, user);
 
     await page.goto(`/@${user.username}`);
 

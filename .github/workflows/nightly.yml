@@ -50,6 +50,7 @@ jobs:
           path: |
             test-results/e2e-results.xml
             reports/playwright-report/
+            e2e/test-results/
           retention-days: 30
       - uses: dorny/test-reporter@v1
         if: always()
