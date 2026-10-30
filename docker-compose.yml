@@ -1,0 +1,29 @@
+# Local and CI test stack. These credentials are for throwaway test data only.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: conduit
+      POSTGRES_PASSWORD: conduit
+      POSTGRES_DB: conduit
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U conduit"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build: { context: ., dockerfile: Dockerfile.backend }
+    ports: ["3000:3000"]
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgresql://conduit:conduit@db:5432/conduit
+      JWT_SECRET: local-test-secret
+    depends_on:
+      db:
+        condition: service_healthy
+
+  frontend:
+    build: { context: ., dockerfile: Dockerfile.frontend }
+    ports: ["80:80"]
+    depends_on: [backend]

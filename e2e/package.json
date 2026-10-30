@@ -1,0 +1,13 @@
+{
+  "name": "realworld-qa-showcase-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep \"\[smoke\]\"",
+    "test:report": "playwright show-report ../reports/playwright-report"
+  },
+  "author": "Carlos Ozoria",
+  "license": "MIT"
+}

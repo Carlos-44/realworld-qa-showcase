@@ -1,0 +1,58 @@
+/* Minimal styles: the stylesheet the upstream app linked to is no longer hosted. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Source Serif Pro", Georgia, serif; color: #373a3c; line-height: 1.5; }
+a { color: #5cb85c; text-decoration: none; }
+a:hover { text-decoration: underline; }
+ul { list-style: none; margin: 0; padding: 0; }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+.page { padding-top: 24px; }
+.navbar { padding: 8px 0; }
+.navbar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.navbar-brand { font-family: "Titillium Web", sans-serif; font-size: 1.5rem; font-weight: 700; }
+.navbar-nav { display: flex; gap: 16px; }
+.nav-link { color: rgba(0, 0, 0, 0.5); }
+.nav-link.active { color: rgba(0, 0, 0, 0.8); }
+.nav-pills { display: flex; gap: 16px; border-bottom: 1px solid #e5e5e5; padding-bottom: 8px; }
+.user-pic { width: 26px; height: 26px; border-radius: 50%; vertical-align: middle; margin-right: 4px; }
+.banner { background: #5cb85c; color: #fff; padding: 32px 0; text-align: center; }
+.home-page .banner h1 { font-family: "Titillium Web", sans-serif; font-size: 3rem; margin: 0; }
+.article-page .banner { background: #333; text-align: left; }
+.article-page .banner h1 { margin: 0 0 16px; }
+.row { display: flex; flex-wrap: wrap; gap: 24px; }
+.col-md-9 { flex: 3 1 480px; min-width: 0; }
+.col-md-3 { flex: 1 1 180px; }
+.col-md-6, .col-md-8, .col-md-10, .col-xs-12 { flex: 1 1 100%; max-width: 640px; margin: 0 auto; }
+.text-xs-center { text-align: center; }
+.form-group { border: 0; padding: 0; margin: 0 0 16px; }
+fieldset { border: 0; padding: 0; margin: 0; }
+.form-control { display: block; width: 100%; padding: 10px 14px; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 4px; font: inherit; }
+.btn { display: inline-block; padding: 8px 16px; border: 1px solid transparent; border-radius: 4px; font: inherit; cursor: pointer; }
+.btn-sm { padding: 2px 8px; font-size: 0.875rem; }
+.btn-primary { background: #5cb85c; border-color: #5cb85c; color: #fff; }
+.btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
+.btn-outline-primary { background: transparent; border-color: #5cb85c; color: #5cb85c; }
+.btn-outline-secondary { background: transparent; border-color: #ccc; color: #999; }
+.btn-outline-danger { background: transparent; border-color: #b85c5c; color: #b85c5c; }
+.pull-xs-right { float: right; }
+.error-messages { color: #b85c5c; font-weight: 700; padding-left: 20px; list-style: disc; }
+.article-preview { border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 24px 0; }
+.article-preview h1 { font-size: 1.5rem; margin: 8px 0 4px; color: #373a3c; }
+.article-preview p { color: #999; margin: 0 0 8px; }
+.preview-link { display: block; }
+.article-meta { display: flex; align-items: center; gap: 8px; }
+.article-meta img { width: 32px; height: 32px; border-radius: 50%; }
+.article-meta .info { display: flex; flex-direction: column; font-size: 0.875rem; }
+.date { color: #bbb; font-size: 0.8rem; }
+.tag-list { display: flex; flex-wrap: wrap; gap: 4px; }
+.tag-default, .tag-pill { padding: 0 8px; border-radius: 10px; background: #eee; font-size: 0.8rem; }
+.sidebar { background: #f3f3f3; padding: 8px 12px; border-radius: 4px; }
+.tag-list a { color: #555; }
+.card { border: 1px solid #e5e5e5; border-radius: 4px; margin-bottom: 12px; }
+.card-block { padding: 12px 16px; }
+.card-footer { display: flex; align-items: center; gap: 8px; padding: 8px 16px; background: #f5f5f5; font-size: 0.875rem; }
+.comment-author-img { width: 20px; height: 20px; border-radius: 50%; }
+.mod-options { margin-left: auto; cursor: pointer; }
+.user-info { background: #f3f3f3; padding: 32px 0; text-align: center; }
+.user-img { width: 100px; height: 100px; border-radius: 50%; }
+.pagination { display: flex; gap: 4px; padding: 16px 0; }
+.page-link { padding: 4px 10px; border: 1px solid #ddd; }
