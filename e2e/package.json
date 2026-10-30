@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "test": "playwright test",
-    "test:smoke": "playwright test --grep \"\[smoke\]\"",
+    "test:smoke": "playwright test --grep smoke",
     "test:report": "playwright show-report ../reports/playwright-report"
   },
   "author": "Carlos Ozoria",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.55.1"
+  }
 }
