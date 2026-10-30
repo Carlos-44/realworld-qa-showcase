@@ -19,10 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-The applications in frontend/ and backend/ are the RealWorld example apps by
-GoThinkster and contributors, with small changes for this project. frontend/
-keeps its own MIT license in frontend/LICENSE.md. backend/ declares MIT in its
-package.json.

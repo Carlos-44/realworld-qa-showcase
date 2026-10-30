@@ -1,0 +1,4 @@
+The applications in frontend/ and backend/ are the RealWorld example apps by
+GoThinkster and contributors, with small changes for this project. frontend/
+keeps its own MIT license in frontend/LICENSE.md. backend/ declares MIT in its
+package.json.
