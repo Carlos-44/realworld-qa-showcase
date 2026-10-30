@@ -25,6 +25,8 @@ Test results appear as GitHub Checks through [dorny/test-reporter](https://githu
 
 Each test case is a [GitHub Issue](https://github.com/Carlos-44/realworld-qa-showcase/issues) with steps and an expected result. Its `TC-###` ID appears in the name of the automated test, so a failure in a report traces straight back to its issue.
 
+📋 [Test Case Tracker board](https://github.com/users/Carlos-44/projects/1) — view live status of all 14 test cases
+
 | ID | Test case | Area | Tags | Automated in |
 |---|---|---|---|---|
 | TC-001 | User can register a new account | Auth | smoke | `auth.spec.js` |
