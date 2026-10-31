@@ -6,11 +6,14 @@
   "scripts": {
     "test": "playwright test",
     "test:smoke": "playwright test --grep smoke",
-    "test:report": "playwright show-report ../reports/playwright-report"
+    "test:report": "playwright show-report ../reports/playwright-report",
+    "test:bdd": "cucumber-js --config cucumber.json",
+    "test:bdd:report": "cucumber-js --config cucumber.json --format html:../reports/cucumber-report.html"
   },
   "author": "Carlos Ozoria",
   "license": "MIT",
   "devDependencies": {
+    "@cucumber/cucumber": "^10.9.0",
     "@playwright/test": "^1.55.1"
   }
 }
