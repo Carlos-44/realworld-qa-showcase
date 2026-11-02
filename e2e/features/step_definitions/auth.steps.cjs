@@ -34,10 +34,6 @@ When('I fill in a unique username, email, and password', async function () {
   await this.page.getByPlaceholder('Password').fill(this.user.password);
 });
 
-When('I click {string}', async function (buttonText) {
-  await this.page.getByRole('button', { name: buttonText }).click();
-});
-
 When('I log in with that user\'s email and password', async function () {
   await loginThroughForm(this.page, this.user.email, this.user.password);
 });
@@ -52,10 +48,6 @@ When('I navigate to Settings and click logout', async function () {
 });
 
 // ---- Then ----
-
-Then('I should be redirected to the home page', async function () {
-  await expect(this.page).toHaveURL('/');
-});
 
 Then('the navigation should show my username', async function () {
   await expect(this.page.getByRole('navigation')).toContainText(this.user.username);

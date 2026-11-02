@@ -14,7 +14,7 @@ Feature: Article Management
   Scenario: [TC-006] User can edit an existing article
     Given a user account exists with an article via the API and I am signed in
     When I navigate to that article's page
-    And I click "Edit Article"
+    And I click the "Edit Article" link
     And I update the article title
     And I click "Publish Article"
     Then the article heading should show the new title
@@ -35,6 +35,6 @@ Feature: Article Management
 
   Scenario: [TC-009] Global feed loads and displays articles
     Given a user account exists with an article via the API and I am signed in
-    When I click "Global Feed"
+    When I open the Global Feed
     Then the article should appear in the feed
     And there should be at least 1 article

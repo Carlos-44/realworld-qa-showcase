@@ -19,16 +19,8 @@ When('I update my bio with a unique value', async function () {
   await this.page.getByPlaceholder('Short bio about you').fill(this.bio);
 });
 
-When('I click {string}', async function (buttonText) {
-  await this.page.getByRole('button', { name: buttonText }).click();
-});
-
 When('I visit the user\'s profile page', async function () {
   await this.page.goto(`/@${this.user.username}`);
-});
-
-Then('I should be redirected to the home page', async function () {
-  await expect(this.page).toHaveURL('/');
 });
 
 Then('my profile page should display the new bio', async function () {

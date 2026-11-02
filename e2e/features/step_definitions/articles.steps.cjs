@@ -23,20 +23,8 @@ When('I fill in the article title, about, and body', async function () {
   await this.page.getByPlaceholder('Write your article (in markdown)').fill('Body of the article');
 });
 
-When('I click {string}', async function (buttonText) {
-  await this.page.getByRole('button', { name: buttonText }).click();
-});
-
 When('I navigate to that article\'s page', async function () {
   await this.page.goto(`/article/${this.article.slug}`);
-});
-
-When('I click {string}', async function (linkOrButton) {
-  // Handle both links and buttons
-  const locator = this.page.getByRole('link', { name: linkOrButton }).or(
-    this.page.getByRole('button', { name: linkOrButton })
-  );
-  await locator.first().click();
 });
 
 When('I update the article title', async function () {
@@ -55,7 +43,7 @@ When('I click the favorite button', async function () {
   await this.articlePreview.getByRole('button').click();
 });
 
-When('I click "Global Feed"', async function () {
+When('I open the Global Feed', async function () {
   await this.page.goto('/');
   await this.page.getByRole('link', { name: 'Global Feed' }).click();
 });
@@ -73,10 +61,6 @@ Then('the article heading and body should be visible', async function () {
 
 Then('the article heading should show the new title', async function () {
   await expect(this.page.getByRole('heading', { level: 1, name: this.newTitle })).toBeVisible();
-});
-
-Then('I should be redirected to the home page', async function () {
-  await expect(this.page).toHaveURL('/');
 });
 
 Then('the user\'s profile should show no articles', async function () {
