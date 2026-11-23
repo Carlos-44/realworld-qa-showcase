@@ -2,7 +2,7 @@
 
 - **Priority:** P3
 - **Type:** negative
-- **Linked criteria:** F-05 AC-04
+- **Linked criteria:** F-05 AC-04 ([F-05](../features/F-05-profile-settings.md))
 - **Status:** Not started
 - **Automation:** None yet (no automated test written).
 

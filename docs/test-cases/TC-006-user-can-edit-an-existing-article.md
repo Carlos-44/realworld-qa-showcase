@@ -2,7 +2,7 @@
 
 - **Priority:** P2
 - **Type:** functional
-- **Linked criteria:** F-02 AC-02
+- **Linked criteria:** F-02 AC-02 ([F-02](../features/F-02-articles.md))
 - **Status:** Automated
 - **Automation:** e2e/tests/articles.spec.js — "[TC-006] [regression] User can edit an existing article"
 

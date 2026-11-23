@@ -2,7 +2,7 @@
 
 - **Priority:** P2
 - **Type:** functional
-- **Linked criteria:** F-02 AC-03
+- **Linked criteria:** F-02 AC-03 ([F-02](../features/F-02-articles.md))
 - **Status:** Automated
 - **Automation:** e2e/tests/articles.spec.js — "[TC-007] [regression] User can delete an article"
 

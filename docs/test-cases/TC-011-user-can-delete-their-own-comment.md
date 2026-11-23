@@ -2,7 +2,7 @@
 
 - **Priority:** P2
 - **Type:** functional
-- **Linked criteria:** F-04 AC-02
+- **Linked criteria:** F-04 AC-02 ([F-04](../features/F-04-comments.md))
 - **Status:** Automated
 - **Automation:** e2e/tests/comments.spec.js — "[TC-011] [regression] User can delete their own comment"
 

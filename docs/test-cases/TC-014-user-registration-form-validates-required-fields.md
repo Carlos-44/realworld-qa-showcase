@@ -2,7 +2,7 @@
 
 - **Priority:** P1
 - **Type:** negative
-- **Linked criteria:** F-01 AC-05
+- **Linked criteria:** F-01 AC-05 ([F-01](../features/F-01-authentication.md))
 - **Status:** Automated
 - **Automation:** frontend/src/__tests__/Auth.test.jsx — "Register form › [TC-014] [unit] …"
 

@@ -2,7 +2,7 @@
 
 - **Priority:** P3
 - **Type:** functional
-- **Linked criteria:** F-03 AC-03
+- **Linked criteria:** F-03 AC-03 ([F-03](../features/F-03-favorites.md))
 - **Status:** Not started
 - **Automation:** None yet (no automated test written).
 

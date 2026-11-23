@@ -2,7 +2,7 @@
 
 - **Priority:** P1
 - **Type:** negative
-- **Linked criteria:** F-02 AC-06
+- **Linked criteria:** F-02 AC-06 ([F-02](../features/F-02-articles.md))
 - **Status:** Not started
 - **Automation:** None yet (no automated test written).
 

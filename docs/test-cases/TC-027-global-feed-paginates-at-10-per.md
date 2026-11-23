@@ -2,7 +2,7 @@
 
 - **Priority:** P3
 - **Type:** boundary
-- **Linked criteria:** F-06 AC-03
+- **Linked criteria:** F-06 AC-03 ([F-06](../features/F-06-global-feed.md))
 - **Status:** Not started
 - **Automation:** None yet (no automated test written).
 
