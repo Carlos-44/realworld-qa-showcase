@@ -11,7 +11,7 @@ permissions:
 jobs:
   e2e_nightly:
     name: E2E Tests (Full Regression)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # Playwright 1.55.1 does not support ubuntu-26.04 (ubuntu-latest)
     timeout-minutes: 30
     permissions:
       checks: write
@@ -63,7 +63,7 @@ jobs:
   publish_report:
     name: Publish Nightly Report to GitHub Pages
     needs: e2e_nightly
-    if: always()
+    if: always() && github.ref == 'refs/heads/main' # only publish to Pages from main
     runs-on: ubuntu-latest
     permissions:
       contents: write
