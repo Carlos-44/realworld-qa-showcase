@@ -34,7 +34,7 @@ TC-001 to TC-014 match the existing GitHub Issues #1 to #14. New cases start at 
 | F-06 AC-04 | [TC-028](TC-028.md) | No |
 | F-06 AC-05 | [TC-029](TC-029.md) | No |
 
-Totals: 29 test cases. 14 are automated (TC-001 to TC-014), and 15 are not started.
+Totals: 29 test cases. 14 have automated tests: TC-014 passes locally, and TC-001 to TC-013 are "Automated (unverified)" because their e2e specs haven't passed in CI. 15 are not started.
 
 Notes on existing cases:
 - TC-008 and TC-009 sign in as the article author, which works around gap G-2.
