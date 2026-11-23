@@ -2,7 +2,7 @@
 
 - **Priority:** P1
 - **Type:** functional
-- **Linked criteria:** F-02 AC-01
+- **Linked criteria:** F-02 AC-01 ([F-02](../features/F-02-articles.md))
 - **Status:** Automated
 - **Automation:** e2e/tests/articles.spec.js — "[TC-005] [smoke] User can publish a new article"
 

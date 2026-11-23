@@ -2,7 +2,7 @@
 
 - **Priority:** P2
 - **Type:** regression
-- **Linked criteria:** F-06 AC-05
+- **Linked criteria:** F-06 AC-05 ([F-06](../features/F-06-global-feed.md))
 - **Status:** Not started
 - **Automation:** None yet (no automated test written).
 

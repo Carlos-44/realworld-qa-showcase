@@ -2,7 +2,7 @@
 
 - **Priority:** P2
 - **Type:** functional
-- **Linked criteria:** F-06 AC-01
+- **Linked criteria:** F-06 AC-01 ([F-06](../features/F-06-global-feed.md))
 - **Status:** Automated
 - **Automation:** e2e/tests/articles.spec.js — "[TC-009] [nightly] [e2e] Global feed loads and displays articles"
 

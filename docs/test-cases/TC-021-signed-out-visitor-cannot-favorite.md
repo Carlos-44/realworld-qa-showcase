@@ -2,7 +2,7 @@
 
 - **Priority:** P3
 - **Type:** negative
-- **Linked criteria:** F-03 AC-04
+- **Linked criteria:** F-03 AC-04 ([F-03](../features/F-03-favorites.md))
 - **Status:** Not started
 - **Automation:** None yet (no automated test written).
 

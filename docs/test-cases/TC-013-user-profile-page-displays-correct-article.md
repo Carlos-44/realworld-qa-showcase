@@ -2,7 +2,7 @@
 
 - **Priority:** P2
 - **Type:** functional
-- **Linked criteria:** F-05 AC-02
+- **Linked criteria:** F-05 AC-02 ([F-05](../features/F-05-profile-settings.md))
 - **Status:** Automated
 - **Automation:** e2e/tests/profile.spec.js — "[TC-013] [nightly] [e2e] User profile page displays correct article count"
 

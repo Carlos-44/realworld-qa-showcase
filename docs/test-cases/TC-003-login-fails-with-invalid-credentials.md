@@ -2,7 +2,7 @@
 
 - **Priority:** P1
 - **Type:** negative
-- **Linked criteria:** F-01 AC-03
+- **Linked criteria:** F-01 AC-03 ([F-01](../features/F-01-authentication.md))
 - **Status:** Automated
 - **Automation:** e2e/tests/auth.spec.js — "[TC-003] [regression] Login fails with invalid credentials"
 

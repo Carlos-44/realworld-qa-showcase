@@ -2,7 +2,7 @@
 
 - **Priority:** P2
 - **Type:** functional
-- **Linked criteria:** F-05 AC-01
+- **Linked criteria:** F-05 AC-01 ([F-05](../features/F-05-profile-settings.md))
 - **Status:** Automated
 - **Automation:** e2e/tests/profile.spec.js — "[TC-012] [regression] User can update their profile settings"
 

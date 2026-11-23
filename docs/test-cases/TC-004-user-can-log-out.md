@@ -2,7 +2,7 @@
 
 - **Priority:** P2
 - **Type:** functional
-- **Linked criteria:** F-01 AC-04
+- **Linked criteria:** F-01 AC-04 ([F-01](../features/F-01-authentication.md))
 - **Status:** Automated
 - **Automation:** e2e/tests/auth.spec.js — "[TC-004] [regression] User can log out"
 

@@ -2,7 +2,7 @@
 
 - **Priority:** P3
 - **Type:** boundary
-- **Linked criteria:** F-04 AC-03
+- **Linked criteria:** F-04 AC-03 ([F-04](../features/F-04-comments.md))
 - **Status:** Not started
 - **Automation:** None yet (no automated test written).
 

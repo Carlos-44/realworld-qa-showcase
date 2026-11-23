@@ -2,7 +2,7 @@
 
 - **Priority:** P2
 - **Type:** negative
-- **Linked criteria:** F-01 AC-06
+- **Linked criteria:** F-01 AC-06 ([F-01](../features/F-01-authentication.md))
 - **Status:** Not started
 - **Automation:** None yet (no automated test written).
 

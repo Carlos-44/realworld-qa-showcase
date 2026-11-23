@@ -2,7 +2,7 @@
 
 - **Priority:** P2
 - **Type:** functional
-- **Linked criteria:** F-05 AC-03
+- **Linked criteria:** F-05 AC-03 ([F-05](../features/F-05-profile-settings.md))
 - **Status:** Not started
 - **Automation:** None yet (no automated test written).
 

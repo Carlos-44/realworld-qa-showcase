@@ -2,7 +2,7 @@
 
 - **Priority:** P2
 - **Type:** negative
-- **Linked criteria:** F-04 AC-04
+- **Linked criteria:** F-04 AC-04 ([F-04](../features/F-04-comments.md))
 - **Status:** Not started
 - **Automation:** None yet (no automated test written).
 

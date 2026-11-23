@@ -2,7 +2,7 @@
 
 - **Priority:** P2
 - **Type:** functional
-- **Linked criteria:** F-03 AC-01
+- **Linked criteria:** F-03 AC-01 ([F-03](../features/F-03-favorites.md))
 - **Status:** Automated
 - **Automation:** e2e/tests/articles.spec.js — "[TC-008] [regression] User can favorite an article"
 

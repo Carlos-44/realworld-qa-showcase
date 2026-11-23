@@ -2,7 +2,7 @@
 
 - **Priority:** P1
 - **Type:** functional
-- **Linked criteria:** F-01 AC-02
+- **Linked criteria:** F-01 AC-02 ([F-01](../features/F-01-authentication.md))
 - **Status:** Automated
 - **Automation:** e2e/tests/auth.spec.js — "[TC-002] [smoke] User can log in with valid credentials"
 
